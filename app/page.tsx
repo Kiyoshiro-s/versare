@@ -36,7 +36,7 @@ export default function Home() {
           gap: "1.25rem",
         }}>
           {[
-            { href: "/beans", icon: "🫘", title: "コーヒー豆", desc: "産地・焙煎度・テイストを記録" },
+            { href: "/beans", icon: "🫘🫘", title: "コーヒー豆", desc: "産地・焙煎度・テイストを記録" },
             { href: "/recipes", icon: "☕️", title: "抽出レシピ", desc: "湯温・湯量・抽出時間を共有" },
             { href: "/cafes", icon: "🏠", title: "カフェ探訪記", desc: "訪れたカフェの思い出を残す" },
           ].map(({ href, icon, title, desc }) => (
