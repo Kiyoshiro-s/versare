@@ -25,7 +25,7 @@ export default function Home() {
           letterSpacing: "0.06em",
           fontWeight: 300,
         }}>
-          コーヒーの記憶を、ここに。
+          コーヒーの記憶
         </p>
       </div>
 
