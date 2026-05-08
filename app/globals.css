@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* =====================
+  COLOR SYSTEM
+===================== */
+:root {
+  --cream: #FAF6EF;
+  --dark: #1A1208;
+  --brown: #5C3D1E;
+  --mid: #8B6340;
+  --light: #C4A882;
+  --card: #FFFDF8;
+  --border: #E8DDD0;
+}
+
+/* =====================
+  RESET
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* =====================
+  TYPOGRAPHY
+===================== */
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* =====================
+  NAVIGATION
+===================== */
+.nav-link {
+  color: rgba(250, 246, 239, 0.65);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  padding: 0 1.2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--cream);
+  border-bottom: 2px solid var(--light);
+}
+
+/* =====================
+  CARDS
+===================== */
+.card {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--light);
+}
+
+/* =====================
+  BUTTON FEEL（押した感）
+===================== */
+button {
+  transition: all 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* =====================
+  INPUT FOCUS（地味に重要）
+===================== */
+input, textarea, select {
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--mid);
+  box-shadow: 0 0 0 3px rgba(139, 99, 64, 0.15);
+}
