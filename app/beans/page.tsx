@@ -51,7 +51,7 @@ export default function BeansPage() {
             コーヒー豆
           </h1>
           <p style={{ fontSize: "13px", color: "var(--mid)", marginTop: "4px", fontWeight: 300 }}>
-            豆の産地・焙煎度・特徴を記録する
+            豆の記憶
           </p>
         </div>
         <Link href="/" style={{ fontSize: "13px", color: "var(--mid)", textDecoration: "none" }}>← ホーム</Link>

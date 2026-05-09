@@ -41,10 +41,10 @@ export default function CafesPage() {
       <div style={{ marginBottom: "2rem", display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
         <div>
           <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.2rem", fontWeight: 300, fontStyle: "italic" }}>
-            カフェ記録
+            カフェ探訪記
           </h1>
           <p style={{ fontSize: "13px", color: "var(--mid)", marginTop: "4px", fontWeight: 300 }}>
-            訪れたカフェの記録と共有
+            訪れたカフェの記憶
           </p>
         </div>
         <Link href="/" style={{ fontSize: "13px", color: "var(--mid)", textDecoration: "none" }}>← ホーム</Link>

@@ -55,7 +55,7 @@ export default function RecipesPage() {
             抽出レシピ
           </h1>
           <p style={{ fontSize: "13px", color: "var(--mid)", marginTop: "4px", fontWeight: 300 }}>
-            抽出条件と味の記録
+            レシピの記憶
           </p>
         </div>
         <Link href="/" style={{ fontSize: "13px", color: "var(--mid)", textDecoration: "none" }}>← ホーム</Link>
