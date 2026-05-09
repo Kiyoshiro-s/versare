@@ -73,8 +73,8 @@ export default function BeansPage() {
 
         <div style={formRowStyle}>
           <div>
-            <label style={labelStyle}>農園 / 生産者</label>
-            <input style={inputStyle} value={farm} onChange={e => setFarm(e.target.value)} placeholder="例：コチャレ農協" />
+            <label style={labelStyle}>購入店</label>
+            <input style={inputStyle} value={farm} onChange={e => setFarm(e.target.value)} placeholder="例：カルディ" />
           </div>
           <div>
             <label style={labelStyle}>精製方法</label>

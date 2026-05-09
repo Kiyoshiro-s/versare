@@ -44,7 +44,7 @@ export default function CafesPage() {
             カフェ探訪記
           </h1>
           <p style={{ fontSize: "13px", color: "var(--mid)", marginTop: "4px", fontWeight: 300 }}>
-            訪れたカフェの記憶
+            カフェの記憶
           </p>
         </div>
         <Link href="/" style={{ fontSize: "13px", color: "var(--mid)", textDecoration: "none" }}>← ホーム</Link>
