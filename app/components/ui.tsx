@@ -75,7 +75,7 @@ export const sectionTitleStyle: React.CSSProperties = {
 
 export const itemsGridStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
+  gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
   gap: "1.25rem",
 };
 

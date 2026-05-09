@@ -32,7 +32,7 @@ export default function Home() {
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "2.5rem 2rem" }}>
         <div style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
           gap: "1.25rem",
         }}>
           {[
