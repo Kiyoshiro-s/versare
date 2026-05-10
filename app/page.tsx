@@ -97,7 +97,7 @@ export default function Home() {
             fontWeight: 300,
           }}
         >
-          コーヒーの記憶を、ここに。
+          コーヒーの記憶
         </p>
       </div>
 
