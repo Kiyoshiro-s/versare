@@ -139,7 +139,7 @@ export default function Home() {
                   }))
                 }
                 style={{
-                  background: "var(--card)",
+                  background: "#FCFAF9",
                   border: "1px solid var(--border)",
                   borderRadius: "6px",
                   padding: "1.75rem 1rem",
