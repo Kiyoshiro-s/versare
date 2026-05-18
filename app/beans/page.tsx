@@ -55,7 +55,10 @@ export default function BeansPage() {
         .order("id", { ascending: false });
 
       if (error) {
-        console.error(error);
+        console.log(
+          "FETCH ERROR",
+          JSON.stringify(error, null, 2)
+        );
         return;
       }
 
@@ -85,12 +88,17 @@ export default function BeansPage() {
           roast,
           taste,
           memo,
+          image,
         },
       ])
       .select();
 
     if (error) {
-      console.error(error);
+      console.log(
+        "INSERT ERROR",
+        JSON.stringify(error, null, 2)
+      );
+
       alert("保存に失敗しました");
       return;
     }
@@ -117,12 +125,18 @@ export default function BeansPage() {
       .eq("id", id);
 
     if (error) {
-      console.error(error);
+      console.log(
+        "DELETE ERROR",
+        JSON.stringify(error, null, 2)
+      );
+
       alert("削除に失敗しました");
       return;
     }
 
-    setBeans((prev) => prev.filter((b) => b.id !== id));
+    setBeans((prev) =>
+      prev.filter((b) => b.id !== id)
+    );
   };
 
   const filtered = beans.filter(
@@ -179,58 +193,90 @@ export default function BeansPage() {
       </div>
 
       <div style={formCardStyle}>
-        <div style={sectionTitleStyle}>新しい豆を登録</div>
+        <div style={sectionTitleStyle}>
+          新しい豆を登録
+        </div>
 
         <div style={formRowStyle}>
           <div>
-            <label style={labelStyle}>豆の名前</label>
+            <label style={labelStyle}>
+              豆の名前
+            </label>
+
             <input
               style={inputStyle}
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) =>
+                setName(e.target.value)
+              }
             />
           </div>
 
           <div>
-            <label style={labelStyle}>産地</label>
+            <label style={labelStyle}>
+              産地
+            </label>
+
             <input
               style={inputStyle}
               value={origin}
-              onChange={(e) => setOrigin(e.target.value)}
+              onChange={(e) =>
+                setOrigin(e.target.value)
+              }
             />
           </div>
         </div>
 
         <div style={formRowStyle}>
           <div>
-            <label style={labelStyle}>購入店</label>
+            <label style={labelStyle}>
+              購入店
+            </label>
+
             <input
               style={inputStyle}
               value={farm}
-              onChange={(e) => setFarm(e.target.value)}
+              onChange={(e) =>
+                setFarm(e.target.value)
+              }
             />
           </div>
 
           <div>
-            <label style={labelStyle}>精製方法</label>
+            <label style={labelStyle}>
+              精製方法
+            </label>
+
             <select
               style={inputStyle}
               value={process}
-              onChange={(e) => setProcess(e.target.value)}
+              onChange={(e) =>
+                setProcess(e.target.value)
+              }
             >
-              <option value="">選択...</option>
-              {["ウォッシュド", "ナチュラル", "ハニー", "アナエロビック"].map(
-                (v) => (
-                  <option key={v}>{v}</option>
-                )
-              )}
+              <option value="">
+                選択...
+              </option>
+
+              {[
+                "ウォッシュド",
+                "ナチュラル",
+                "ハニー",
+                "アナエロビック",
+              ].map((v) => (
+                <option key={v}>
+                  {v}
+                </option>
+              ))}
             </select>
           </div>
         </div>
 
         <div style={formRowFullStyle}>
           <div>
-            <label style={labelStyle}>焙煎度</label>
+            <label style={labelStyle}>
+              焙煎度
+            </label>
 
             <div
               style={{
@@ -249,10 +295,13 @@ export default function BeansPage() {
               min={1}
               max={5}
               value={roast}
-              onChange={(e) => setRoast(Number(e.target.value))}
+              onChange={(e) =>
+                setRoast(Number(e.target.value))
+              }
               style={{
                 width: "100%",
-                accentColor: "var(--brown)",
+                accentColor:
+                  "var(--brown)",
               }}
             />
           </div>
@@ -260,18 +309,26 @@ export default function BeansPage() {
 
         <div style={formRowFullStyle}>
           <div>
-            <label style={labelStyle}>テイストノート</label>
+            <label style={labelStyle}>
+              テイストノート
+            </label>
+
             <input
               style={inputStyle}
               value={taste}
-              onChange={(e) => setTaste(e.target.value)}
+              onChange={(e) =>
+                setTaste(e.target.value)
+              }
             />
           </div>
         </div>
 
         <div style={formRowFullStyle}>
           <div>
-            <label style={labelStyle}>メモ</label>
+            <label style={labelStyle}>
+              メモ
+            </label>
+
             <textarea
               style={{
                 ...inputStyle,
@@ -279,14 +336,19 @@ export default function BeansPage() {
                 minHeight: "80px",
               }}
               value={memo}
-              onChange={(e) => setMemo(e.target.value)}
+              onChange={(e) =>
+                setMemo(e.target.value)
+              }
             />
           </div>
         </div>
 
         <div style={formRowStyle}>
           <div>
-            <label style={labelStyle}>写真</label>
+            <label style={labelStyle}>
+              写真
+            </label>
+
             <ImageUpload
               previewSrc={image}
               onFile={setImage}
@@ -334,7 +396,9 @@ export default function BeansPage() {
               style={itemCardStyle}
             >
               <div style={cardBodyStyle}>
-                <div style={cardNameStyle}>{bean.name}</div>
+                <div style={cardNameStyle}>
+                  {bean.name}
+                </div>
 
                 <div
                   style={{
@@ -355,7 +419,8 @@ export default function BeansPage() {
                   <div
                     style={{
                       fontSize: "12px",
-                      color: "var(--brown)",
+                      color:
+                        "var(--brown)",
                       marginTop: "6px",
                     }}
                   >
@@ -367,7 +432,8 @@ export default function BeansPage() {
                   <div
                     style={{
                       fontSize: "12px",
-                      color: "var(--mid)",
+                      color:
+                        "var(--mid)",
                       marginTop: "8px",
                     }}
                   >
@@ -379,7 +445,9 @@ export default function BeansPage() {
               <div style={cardFooterStyle}>
                 <button
                   style={deleteBtnStyle}
-                  onClick={() => handleDelete(bean.id)}
+                  onClick={() =>
+                    handleDelete(bean.id)
+                  }
                 >
                   削除
                 </button>
