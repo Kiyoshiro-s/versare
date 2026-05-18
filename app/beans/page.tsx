@@ -398,6 +398,35 @@ export default function BeansPage() {
               className="card"
               style={itemCardStyle}
             >
+              {bean.image ? (
+                <img
+                  src={bean.image}
+                  alt={bean.name}
+                  style={{
+                    width: "100%",
+                    height: "160px",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+              ) : (
+                <div
+                  style={{
+                    width: "100%",
+                    height: "160px",
+                    background:
+                      "linear-gradient(135deg,#E8DDD0,#D4C4B0)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "2rem",
+                    opacity: 0.4,
+                  }}
+                >
+                  ☕
+                </div>
+              )}
+
               <div style={cardBodyStyle}>
                 <div style={cardNameStyle}>
                   {bean.name}
@@ -422,8 +451,7 @@ export default function BeansPage() {
                   <div
                     style={{
                       fontSize: "12px",
-                      color:
-                        "var(--brown)",
+                      color: "var(--brown)",
                       marginTop: "6px",
                     }}
                   >
@@ -435,8 +463,7 @@ export default function BeansPage() {
                   <div
                     style={{
                       fontSize: "12px",
-                      color:
-                        "var(--mid)",
+                      color: "var(--mid)",
                       marginTop: "8px",
                     }}
                   >
