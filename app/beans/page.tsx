@@ -209,6 +209,7 @@ export default function BeansPage() {
               onChange={(e) =>
                 setName(e.target.value)
               }
+              placeholder="例：キリマンジャロ"
             />
           </div>
 
@@ -223,6 +224,7 @@ export default function BeansPage() {
               onChange={(e) =>
                 setOrigin(e.target.value)
               }
+              placeholder="例：タンザニア"
             />
           </div>
         </div>
@@ -239,6 +241,7 @@ export default function BeansPage() {
               onChange={(e) =>
                 setFarm(e.target.value)
               }
+              placeholder="例：KALDI"
             />
           </div>
 

@@ -238,7 +238,7 @@ export default function RecipesPage() {
               onChange={(e) =>
                 setBean(e.target.value)
               }
-              placeholder="例：イルガチェフェ"
+              placeholder="例：ケニア"
             />
           </div>
         </div>
@@ -255,7 +255,7 @@ export default function RecipesPage() {
               onChange={(e) =>
                 setMethod(e.target.value)
               }
-              placeholder="例：V60"
+              placeholder="例：HARIO V60"
             />
           </div>
 
@@ -349,7 +349,6 @@ export default function RecipesPage() {
               onChange={(e) =>
                 setTime(e.target.value)
               }
-              placeholder="2:45"
             />
           </div>
         </div>

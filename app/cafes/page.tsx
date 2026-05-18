@@ -194,7 +194,7 @@ export default function CafesPage() {
               onChange={(e) =>
                 setName(e.target.value)
               }
-              placeholder="例：喫茶 葵"
+              placeholder="例：あすから珈琲"
             />
           </div>
 
@@ -209,7 +209,7 @@ export default function CafesPage() {
               onChange={(e) =>
                 setLocation(e.target.value)
               }
-              placeholder="例：京都市東山区"
+              placeholder="例：左京区北白川"
             />
           </div>
         </div>
@@ -226,7 +226,7 @@ export default function CafesPage() {
               onChange={(e) =>
                 setDrink(e.target.value)
               }
-              placeholder="例：エチオピア浅煎り"
+              placeholder="例：グアテマラ中浅煎り"
             />
           </div>
 
