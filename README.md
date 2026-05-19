@@ -35,6 +35,13 @@ https://versare-rxya.vercel.app/
 
 ---
 
+## 🧠開発支援
+コード実装：Claude
+DB接続・エラー解決：ChatGPT-5.3-mini
+
+---
+
+
 ## ⚙️ 機能
 - 投稿（レシピ・豆・写真）
 - コーヒー記録の一覧表示
