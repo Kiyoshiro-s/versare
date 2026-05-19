@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Versare Coffee App
 
-## Getting Started
+コーヒーサークルの活動記録・レシピ・カフェ情報を一元管理するために制作したWebアプリです。
 
-First, run the development server:
+## 🔗 デモ
+https://versare-rxya.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 制作背景
+所属するコーヒーサークルでは、
+- 豆の情報
+- 抽出レシピ
+- カフェ情報
+- 活動写真
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+などが個別に共有されており、情報が流れてしまう課題がありました。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+そのため、活動の記録を蓄積し、メンバー間で共有できる仕組みとして本アプリを制作しました。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💡 工夫した点（UI/UX）
+- コーヒーの雰囲気に合わせた落ち着いたデザイン
+- 写真中心のカードUIによる直感的な閲覧性
+- レシピ・豆・感想を一体で見られる構成
+- 「記録する人」と「見る人」の行動を意識した設計
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 技術スタック
+- Next.js
+- TypeScript
+- Supabase
+- Vercel
+- GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⚙️ 機能
+- 投稿（レシピ・豆・写真）
+- コーヒー記録の一覧表示
+- データ保存・取得（Supabase）
+- レスポンシブUI
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📌 工夫したポイント（エンジニア観点）
+- フロントエンドとバックエンドを分離した設計
+- Supabaseを用いたリアルタイムデータ管理
+- UI/UXを意識したコンポーネント設計
+- デプロイ環境（Vercel）を用いた公開運用
+
+---
+
+## 🚀 今後の改善予定
+- 投稿編集機能
+- 画像複数アップロード
+- マップ連携機能
+- バックアップ機能
